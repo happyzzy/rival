@@ -10,14 +10,13 @@ function onclick_a(no){
     $.ajax({
         cache: false,
         type: "GET",
-        url:"data/hero.json",
+        url:"data/hero_" + no + ".json",
         async: false,
         error: function(request) {
             alert("Connection error");
         },
         success: function(data) {
             for(var i = 0;i < data.hero.length;i++){
-                if(data.hero[i].no == no){
                     var skills1='';
 
                     skills1 +='<tr>';
@@ -64,8 +63,6 @@ function onclick_a(no){
                         '</div>';
                     $('#hero-modal').html(html_content);
 
-
-                }
             }
 
 
