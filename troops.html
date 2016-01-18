@@ -32,17 +32,6 @@
                     <li class="active"><a href="troops.html">部队</a></li>
                     <li ><a href="bulidings.html">建筑</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">兵种 <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#feature-tab" data-tab="tab-chrome">步兵</a></li>
-                            <li><a href="#feature-tab" data-tab="tab-firefox">弓箭手</a></li>
-                            <li><a href="#feature-tab" data-tab="tab-safari">鸟</a></li>
-                            <li><a href="#feature-tab" data-tab="tab-opera">圣骑</a></li>
-                            <li><a href="#feature-tab" data-tab="tab-ie">大锤</a></li>
-                            <li><a href="#feature-tab" data-tab="tab-ie">魔晶使者</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -75,7 +64,7 @@
         <ul class="nav nav-pills" role="tablist" id="feature-tab">
             <li class="active"><a href="#tab-soldier" role="tab" data-toggle="tab">步兵</a></li>
             <li><a href="#tab-warden" role="tab" data-toggle="tab">弓弩手</a></li>
-            <li><a href="#tab-safari" role="tab" data-toggle="tab">鸟</a></li>
+            <li><a href="#tab-manaHunter" role="tab" data-toggle="tab">鸟</a></li>
             <li><a href="#tab-opera" role="tab" data-toggle="tab">巨人</a></li>
             <li><a href="#tab-ie" role="tab" data-toggle="tab">圣骑士</a></li>
             <li><a href="#tab-ie2" role="tab" data-toggle="tab">魔晶使者</a></li>
@@ -265,8 +254,32 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>描述</td>
-                                <td>这些生长于阿波罗斯森林的部队是技术超群的猎人，没有比捕猎更能让他们开心的事后！</td>
+                                <td>射程</td>
+                                <td>5.25 Tiles</td>
+                            </tr>
+                            <tr>
+                                <td>部队规模</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>移动速度</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>攻击速度</td>
+                                <td>每秒攻击1下(1s攻击间隔)</td>
+                            </tr>
+                            <tr>
+                                <td>特殊能力</td>
+                                <td>可以攻击墙内建筑</td>
+                            </tr>
+                            <tr>
+                                <td>攻击偏好</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>弱点</td>
+                                <td>溅射伤害(魔法塔，投石塔，巨弩)</td>
                             </tr>
                         </table>
 
@@ -418,40 +431,215 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane" id="tab-safari">
+
+
+            <div class="tab-pane" id="tab-manaHunter">
                 <div class="row feature">
                     <div class="col-md-12">
-                        <table class="table table-bordered">
-                            <caption>边框表格布局</caption>
+                        <table class="table">
+                            <tr>
+                                <td>名称</td>
+                                <td>魔力猎人</td>
+                            </tr>
+                            <tr>
+                                <td>图标</td>
+                                <td>
+                                    <img src="images/mana_hunter.png" style="max-width: 30px"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>射程</td>
+                                <td>2.5 Tiles</td>
+                            </tr>
+                            <tr>
+                                <td>部队规模</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>移动速度</td>
+                                <td>3.3</td>
+                            </tr>
+                            <tr>
+                                <td>攻击速度</td>
+                                <td>每秒攻击0.68下 (1.47s攻击间隔)</td>
+                            </tr>
+                            <tr>
+                                <td>特殊能力</td>
+                                <td>摧毁建筑魔力奖励+1</td>
+                            </tr>
+                            <tr>
+                                <td>攻击偏好</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>弱点</td>
+                                <td>防空建筑</td>
+                            </tr>
+                        </table>
+
+                        <table class="table table-bordered table-condensed table-striped">
+                            <caption>等级属性表</caption>
                             <thead>
                             <tr>
-                                <th>名称</th>
-                                <th>城市</th>
-                                <th>密码</th>
+                                <th>等级</th>
+                                <th>生命值</th>
+                                <th>每秒伤害</th>
+                                <th>目标伤害</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Tanmay</td>
-                                <td>Bangalore</td>
-                                <td>560001</td>
+                                <td>1</td>
+                                <td>70</td>
+                                <td>7.8</td>
+                                <td>11 - 12</td>
                             </tr>
                             <tr>
-                                <td>Sachin</td>
-                                <td>Mumbai</td>
-                                <td>400003</td>
+                                <td>2</td>
+                                <td>85</td>
+                                <td>9.83</td>
+                                <td>14 - 15</td>
                             </tr>
                             <tr>
-                                <td>Uma</td>
-                                <td>Pune</td>
-                                <td>411027</td>
+                                <td>3</td>
+                                <td>90</td>
+                                <td>10.85</td>
+                                <td>15 - 17</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>100</td>
+                                <td>11.53</td>
+                                <td>16 - 18</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>115</td>
+                                <td>14.24</td>
+                                <td>20 - 22</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>120</td>
+                                <td>15.93</td>
+                                <td>22 - 25</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>130</td>
+                                <td>17.29</td>
+                                <td>24 - 27</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>145</td>
+                                <td>20.34</td>
+                                <td>28 - 32</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>186</td>
+                                <td>50.00</td>
+                                <td>70 - 73</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>210</td>
+                                <td>56.82</td>
+                                <td>79 - 83</td>
                             </tr>
                             </tbody>
                         </table>
 
+                        <table class="table table-bordered table-condensed table-striped">
+                            <caption>升级花费表</caption>
+                            <thead>
+                            <tr>
+                                <th>等级</th>
+                                <th>升级费用(黄金)</th>
+                                <th>升级费用(银环)</th>
+                                <th>升级时间</th>
+                                <th>铁匠铺等级</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>81,000</td>
+                                <td>-</td>
+                                <td>2天</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>200,000</td>
+                                <td>-</td>
+                                <td>3天</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>420,000</td>
+                                <td>20</td>
+                                <td>4天</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>1,000,000</td>
+                                <td>150</td>
+                                <td>6天</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>1,300,000</td>
+                                <td>230</td>
+                                <td>7天</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>1,600,000</td>
+                                <td>300</td>
+                                <td>8天</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>2,700,000</td>
+                                <td>800</td>
+                                <td>10天</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>3,755,000</td>
+                                <td>1,100</td>
+                                <td>10天</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>4,810,000</td>
+                                <td>1,500</td>
+                                <td>10天</td>
+                                <td>14</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
+
+
             <div class="tab-pane" id="tab-opera">
                 <div class="row feature">
                     <div class="col-md-12">

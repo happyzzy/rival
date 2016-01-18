@@ -24,7 +24,7 @@ function onclick_a(no){
     $.ajax({
         cache: false,
         type: "GET",
-        url:"data/hero_" + no + ".json",
+        url:"data/hero/hero_" + no + ".json",
         async: false,
         error: function(request) {
             alert("Connection error");
