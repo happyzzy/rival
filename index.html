@@ -63,7 +63,25 @@
             <li><a href="#">某某新闻-2013.1.1</a></li>
         </ol>
 
-
+        <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                        <h4 class="modal-title" id="modal-label">关于</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>资料库持续维护ing...</p>
+                        <p>联系邮箱：1327897906@qq.com</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <p class="pull-right"><a href="#top">回到顶部</a></p>
             <p>www.happyzzy.com 2015 rival </p>
@@ -74,8 +92,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     <script type="text/javascript">
-        /*20:2 创建于 2016-01-19*/
-        var cpro_id = "u2497887";
+        if(document.body.clientWidth <= 640){
+            var cpro_id = "u2461880";
+        }else{
+            var cpro_id = "u2499860";
+        }
     </script>
     <script src="http://cpro.baidustatic.com/cpro/ui/cm.js" type="text/javascript"></script>
 </body>
