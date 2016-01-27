@@ -50,7 +50,7 @@
                 <img src="images/banner.png" alt="1 slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1></h1>
+                        <h1>rivalkingdoms竞逐之国中文资料库</h1>
                     </div>
                 </div>
             </div>
@@ -105,6 +105,7 @@
                 </div>
             </div>
         </div>
+        <hr class="divider">
         <footer>
             <p class="pull-right"><a href="#top">回到顶部</a></p>
             <p>www.happyzzy.com 2015 rival </p>
@@ -143,7 +144,7 @@
             var img = '';
             if(news[id].img){
                 for(var i = 0; i < news[id].img.length;i++){
-                    img +='<img src="' + news[id].img[i] +  '"/><br>'
+                    img +='<img style="width:100%"' + ' src="' + news[id].img[i] +  '"/><br>'
                 }
             }
             var html_content = content_front + img + content_back;

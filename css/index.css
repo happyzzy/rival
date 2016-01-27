@@ -4,6 +4,10 @@ body {
     color: #5a5a5a;
 }
 
+.summary {
+    padding-bottom: 80px;
+}
+
 /* 轮播广告 */
 
 .carousel {
@@ -11,25 +15,45 @@ body {
     margin-bottom: 60px;
 }
 
+.carousel_other {
+    height: 100px;
+    margin-bottom: 25px;
+}
+
 .carousel .item {
     height: 240px;
     background-color: #000;
 }
 
+.carousel_other .item {
+    height: 100px;
+    background-color: #000;
+}
+
+
 .carousel .item img {
     width: 100%;
 }
+
+.carousel_other .item img {
+    width: 100%;
+}
+
 
 .carousel-caption {
     z-index: 10;
 }
 
-.carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 1.8;
+
+.carousel-caption h1 {
+    margin: -20px auto;
+    font-size: 40px;
 }
 
+.carousel .carousel-caption h1 {
+    margin: -100px auto;
+    font-size: 40px;
+}
 
 .active a {
     outline: none;
@@ -50,17 +74,34 @@ body {
         margin-bottom: 30px;
     }
 
+    .carousel_other {
+        height: 70px;
+        margin-bottom: 18px;
+    }
+
     .carousel .item {
         height: 200px;
+    }
+    .carousel_other .item {
+        height: 70px;
     }
 
     .carousel img {
         min-height: 200px;
     }
 
-    .carousel-caption p {
-        font-size: 16px;
-        line-height: 1.4;
+    .carousel_other img {
+        min-height: 200px;
+    }
+
+    .carousel-caption h1 {
+        margin: -9px auto;
+        font-size: 20px;
+    }
+
+    .carousel .carousel-caption h1 {
+        margin: -85px auto;
+        font-size: 25px;
     }
 
     .feature-heading {
