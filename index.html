@@ -3,6 +3,10 @@
 <head lang="zh-CN">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="keywords" content="竞逐之国,rivalkingdoms,rival"/>
+    <meta name="description" content="测试版本v0.9,测试阶段界面变化较大,使用相对不稳定,初衷只面向部分测试用户开放,正式版本预计2月7日上线,敬请期待!" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no">
     <title>竞逐之国</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,11 +62,29 @@
     <!--主要内容-->
     <div class="container summary">
         <h2>最新活动</h2>
-        <ol>
-            <li><a href="#">某某新闻-2013.1.1</a></li>
-            <li><a href="#">某某新闻-2013.1.1</a></li>
-            <li><a href="#">某某新闻-2013.1.1</a></li>
+        <ol id="news">
         </ol>
+
+        <!--新闻-->
+        <div class="modal fade" id="newsPage" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                        <h4 class="modal-title" id="news-modal-title"></h4>
+                    </div>
+                    <div class="modal-body" id="news-modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
         <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
              aria-hidden="true">
@@ -93,6 +115,43 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     <script type="text/javascript">
+        var news =  [];
+
+        $.ajax({
+            cache: false,
+            type: "GET",
+            url: "data/news/newsList.json",
+            async: false,
+            error: function (request) {
+                alert("Connection error");
+            },
+            success: function (data) {
+                news = data.news;
+                var html_content = '';
+                for(var i = data.news.length-1 ;i >= 0 ; i--){
+                    html_content += '<li><a href="#" onclick="openNews(' + data.news[i].id  + ')"  data-toggle="modal" data-target="#newsPage">' + data.news[i].title + '--开始时间:' + data.news[i].time + '</a></li>';
+                }
+                $('#news').html(html_content);
+            }
+        });
+
+
+        function openNews(id){
+            $('#news-modal-title').html(news[id].title);
+            var content_front = news[id].content_front + '<br>';
+            var content_back = news[id].content_back + '<br>';
+            var img = '';
+            if(news[id].img){
+                for(var i = 0; i < news[id].img.length;i++){
+                    img +='<img src="' + news[id].img[i] +  '"/><br>'
+                }
+            }
+            var html_content = content_front + img + content_back;
+            $('#news-modal-body').html(html_content);
+
+        }
+
+
         if(document.body.clientWidth <= 640){
             var cpro_id = "u2461880";
         }else{

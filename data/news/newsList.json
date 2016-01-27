@@ -1,0 +1,24 @@
+{
+  "news":[
+    {
+      "title":"古龙之战",
+      "time":"2016-01-29",
+      "content_front":"",
+      "content_back":"",
+      "id":0,
+      "img":[
+        "images/news/1.jpg",
+        "images/news/2.jpg",
+        "images/news/3.jpg"
+      ]
+    },
+      {
+        "title":"关于近期网页改版公告",
+        "time":"无",
+        "content_front":"<h1 style='color:red'>正式版将于2月7日到来，敬请期待，近期页面将会有较大调整，之前测试版本阶段给大家带来的不便，请见谅</h1>",
+        "content_back":"",
+        "id":1,
+        "img":[]
+      }
+    ]
+}
