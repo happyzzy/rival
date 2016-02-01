@@ -31,7 +31,7 @@
                 <li ><a href="../hero.html">守护神</a></li>
                 <li ><a href="../troops.html">基础部队</a></li>
                 <li ><a href="../troops_special.html">特殊部队</a></li>
-                <li class="active"><a href="../bulidings.html">建筑</a></li>
+                <li class="active"><a href="../buildings.html">建筑</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
             </ul>
         </div>
@@ -46,7 +46,7 @@
             <img src="../images/banner.png" alt="1 slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>建筑大全:<span class="text-muted">王国传送门</span></h1>
+                    <h1>建筑大全:<span class="text-muted">守护神神殿</span></h1>
                 </div>
             </div>
         </div>
@@ -60,34 +60,48 @@
     <!-- 特性 -->
     <table class="table table-bordered table-condensed table-striped">
         <tr>
-            <td colspan="4"><a href="../bulidings.html">据点</a></td>
+            <td colspan="4"><a href="../buildings.html">堡垒</a></td>
         </tr>
         <tr>
             <td colspan="4"><h4>攻击建筑</h4></td>
         </tr>
         <tr>
-            <td><a href="bulidings_ancient_shrine.html">守护神神殿</a></td>
-            <td><a href="bulidings_troop_portal.html">传送门</a></td>
-            <td style="background-color: #f0ad4e;"><a href="bulidings_kingdom_portal.html">王国传送门</a></td>
-            <td><a href="bulidings_blacksmith.html">铁匠铺</a></td>
+            <td style="background-color: #f0ad4e;"><a href="buildings_ancient_shrine.html">守护神神殿</a></td>
+            <td><a href="buildings_troop_portal.html">传送门</a></td>
+            <td><a href="buildings_kingdom_portal.html">王国传送门</a></td>
+            <td><a href="buildings_blacksmith.html">铁匠铺</a></td>
+        </tr>
+        <tr>
+            <td><a href="buildings_barracks.html">兵营</a></td>
+            <td><a href="buildings_dragon_roost.html">龙穴</a></td>
         </tr>
         <tr>
             <td colspan="4"><h4>防御建筑</h4></td>
         </tr>
         <tr>
-            <td><a href="#">站位</a></td>
-            <td><a href="#">站位</a></td>
-            <td><a href="#">站位</a></td>
-            <td><a href="#">站位</a></td>
+            <td><a href="buildings_watch_tower.html">弓箭塔</a></td>
+            <td><a href="buildings_spell_tower.html">魔法塔</a></td>
+            <td><a href="buildings_catapult.html">投石器</a></td>
+            <td><a href="buildings_skywatcher.html">防空塔</a></td>
+        </tr>
+        <tr>
+            <td><a href="buildings_primus_conduit.html">魔法座</a></td>
+            <td><a href="buildings_bunker.html">地堡</a></td>
+            <td><a href="buildings_arrow_launcher.html">弩弓塔</a></td>
+            <td><a href="buildings_flare_tower.html">圣光塔</a></td>
+        </tr>
+        <tr>
+            <td><a href="buildings_status.html">雕像</a></td>
+            <td><a href="buildings_walls.html">城墙</a></td>
         </tr>
         <tr>
             <td colspan="4"><h4>生产建筑</h4></td>
         </tr>
         <tr>
-            <td><a href="#">站位</a></td>
-            <td><a href="#">站位</a></td>
-            <td><a href="#">站位</a></td>
-            <td><a href="#">站位</a></td>
+            <td><a href="buildings_tavern.html">酒馆</a></td>
+            <td><a href="buildings_gold_smelter.html">炼金厂</a></td>
+            <td><a href="buildings_gold_storage.html">金库</a></td>
+            <td><a href="buildings_builder.html">建筑工</a></td>
         </tr>
     </table>
     <div class="row feature">
@@ -95,12 +109,12 @@
             <table class="table">
                 <tr>
                     <td>名称</td>
-                    <td>王国传送门</td>
+                    <td>守护神神殿</td>
                 </tr>
                 <tr>
                     <td>图标</td>
                     <td>
-                        <img src="../images/kingdom_portal.png" style="max-width: 30px"/>
+                        <img src="../images/ancient_shrine.png" style="max-width: 30px"/>
                     </td>
                 </tr>
                 <tr>
@@ -109,176 +123,166 @@
                 </tr>
                 <tr>
                     <td>被摧毁时损失魔力</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>请求军队冷却</td>
-                    <td>20分钟</td>
-                </tr>
-                <tr>
-                    <td>跳过冷却</td>
-                    <td>250钻石</td>
+                    <td>1</td>
                 </tr>
             </table>
 
             <table class="table table-bordered table-condensed table-striped">
-                <caption>等级属性表</caption>
+                <!--<caption>等级属性表</caption>-->
                 <thead>
                 <tr>
                     <th>等级</th>
                     <th>生命值</th>
-                    <th>摧毁时魔力</th>
-                    <th>部队规模</th>
+                    <th>守护神最大等级</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>275</td>
-                    <td>4</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>315</td>
-                    <td>4</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>400</td>
-                    <td>4</td>
+                    <td>250</td>
                     <td>5</td>
                 </tr>
                 <tr>
+                    <td>2</td>
+                    <td>290</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>365</td>
+                    <td>15</td>
+                </tr>
+                <tr>
                     <td>4</td>
-                    <td>525</td>
-                    <td>4</td>
-                    <td>6</td>
+                    <td>475</td>
+                    <td>20</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>645</td>
-                    <td>4</td>
-                    <td>7</td>
+                    <td>590</td>
+                    <td>25</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>690</td>
-                    <td>3</td>
-                    <td>7</td>
+                    <td>700</td>
+                    <td>30</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td>885</td>
-                    <td>3</td>
-                    <td>8</td>
+                    <td>850</td>
+                    <td>35</td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td>1,020</td>
-                    <td>2</td>
-                    <td>8</td>
+                    <td>925</td>
+                    <td>40</td>
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td>1,185</td>
-                    <td>2</td>
-                    <td>9</td>
+                    <td>1,075</td>
+                    <td>45</td>
                 </tr>
                 <tr>
                     <td>10</td>
-                    <td>1,350</td>
-                    <td>2</td>
-                    <td>10</td>
+                    <td>1,225</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>1,375</td>
+                    <td>60</td>
                 </tr>
                 </tbody>
             </table>
 
             <table class="table table-bordered table-condensed table-striped">
-                <caption>升级花费表</caption>
+                <!--<caption>升级花费表</caption>-->
                 <thead>
                 <tr>
                     <th>等级</th>
                     <th>升级费用(黄金)</th>
                     <th>升级费用(银环)</th>
                     <th>升级时间</th>
-                    <th>Project Leve</th>
-                    <th>生命值</th>
+                    <th>需求据点等级</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>1,500</td>
+                    <td>360</td>
                     <td>-</td>
-                    <td>12小时</td>
-                    <td>-</td>
-                    <td>315</td>
+                    <td>4分钟</td>
+                    <td>1</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>4,000</td>
+                    <td>720</td>
                     <td>-</td>
-                    <td>18小时</td>
-                    <td>1</td>
-                    <td>400</td>
+                    <td>19分钟</td>
+                    <td>2</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>12,000</td>
+                    <td>3,800</td>
                     <td>-</td>
-                    <td>1天</td>
-                    <td>2</td>
-                    <td>525</td>
+                    <td>3小时</td>
+                    <td>3</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>42,500</td>
+                    <td>5,000</td>
                     <td>-</td>
-                    <td>1天12小时</td>
-                    <td>3</td>
-                    <td>645</td>
+                    <td>5小时</td>
+                    <td>4</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>100,000</td>
-                    <td>20</td>
-                    <td>2天</td>
-                    <td>4</td>
-                    <td>690</td>
+                    <td>150,000</td>
+                    <td>-</td>
+                    <td>15小时</td>
+                    <td>6</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>200,000</td>
-                    <td>40</td>
-                    <td>3天</td>
-                    <td>5</td>
-                    <td>770</td>
+                    <td>340,000</td>
+                    <td>-</td>
+                    <td>2天15小时</td>
+                    <td>8</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td>420,000</td>
-                    <td>225</td>
-                    <td>5天</td>
-                    <td>6</td>
-                    <td>855</td>
+                    <td>610,000</td>
+                    <td>-</td>
+                    <td>3天15小时</td>
+                    <td>10</td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td>1,000,000</td>
-                    <td>1,500</td>
-                    <td>7天</td>
-                    <td>7</td>
-                    <td>895</td>
+                    <td>1,200,000</td>
+                    <td>-</td>
+                    <td>4天</td>
+                    <td>12</td>
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td>1,250,000</td>
-                    <td>2,250</td>
-                    <td>14天</td>
-                    <td>8</td>
-                    <td>1,005</td>
+                    <td>1,600,000</td>
+                    <td>-</td>
+                    <td>5天</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>2,000,000</td>
+                    <td>-</td>
+                    <td>8天</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>4,000,000</td>
+                    <td>3,200</td>
+                    <td>12天</td>
+                    <td>15</td>
                 </tr>
                 </tbody>
             </table>
@@ -306,26 +310,6 @@
             <div class="modal-body">
                 <p>资料库持续维护ing...</p>
                 <p>联系邮箱：1327897906@qq.com</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--英雄-->
-<div class="modal fade" id="hero" tabindex="-1" role="dialog" aria-labelledby="modal-label"
-     aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span
-                        aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
-                <h4 class="modal-title">英雄</h4>
-            </div>
-            <div class="modal-body" id="hero-modal">
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>

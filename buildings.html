@@ -31,7 +31,7 @@
                     <li ><a href="hero.html">守护神</a></li>
                     <li ><a href="troops.html">基础部队</a></li>
                     <li ><a href="troops_special.html">特殊部队</a></li>
-                    <li class="active"><a href="bulidings.html">建筑</a></li>
+                    <li class="active"><a href="buildings.html">建筑</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
                 </ul>
             </div>
@@ -46,7 +46,7 @@
                 <img src="images/banner.png" alt="1 slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>建筑大全:<span class="text-muted">据点</span></h1>
+                        <h1>建筑大全:<span class="text-muted">堡垒</span></h1>
                     </div>
                 </div>
             </div>
@@ -60,34 +60,48 @@
         <!-- 特性 -->
         <table class="table table-bordered table-condensed table-striped">
             <tr>
-                <td colspan="4" style="background-color: #f0ad4e;"><a href="bulidings.html">据点</a></td>
+                <td colspan="4" style="background-color: #f0ad4e;"><a href="buildings.html">堡垒</a></td>
             </tr>
             <tr>
                 <td colspan="4"><h4>攻击建筑</h4></td>
             </tr>
             <tr>
-                <td><a href="bulidingPages/bulidings_ancient_shrine.html">守护神神殿</a></td>
-                <td><a href="bulidingPages/bulidings_troop_portal.html">传送门</a></td>
-                <td><a href="bulidingPages/bulidings_kingdom_portal.html">王国传送门</a></td>
-                <td><a href="bulidingPages/bulidings_blacksmith.html">铁匠铺</a></td>
+                <td><a href="bulidingPages/buildings_ancient_shrine.html">守护神神殿</a></td>
+                <td><a href="bulidingPages/buildings_troop_portal.html">传送门</a></td>
+                <td><a href="bulidingPages/buildings_kingdom_portal.html">王国传送门</a></td>
+                <td><a href="bulidingPages/buildings_blacksmith.html">铁匠铺</a></td>
+            </tr>
+            <tr>
+                <td><a href="bulidingPages/buildings_barracks.html">兵营</a></td>
+                <td><a href="bulidingPages/buildings_dragon_roost.html">龙穴</a></td>
             </tr>
             <tr>
                 <td colspan="4"><h4>防御建筑</h4></td>
             </tr>
             <tr>
-                <td><a href="#">站位</a></td>
-                <td><a href="#">站位</a></td>
-                <td><a href="#">站位</a></td>
-                <td><a href="#">站位</a></td>
+                <td><a href="bulidingPages/buildings_watch_tower.html">弓箭塔</a></td>
+                <td><a href="bulidingPages/buildings_spell_tower.html">魔法塔</a></td>
+                <td><a href="bulidingPages/buildings_catapult.html">投石器</a></td>
+                <td><a href="bulidingPages/buildings_skywatcher.html">防空塔</a></td>
+            </tr>
+            <tr>
+                <td><a href="bulidingPages/buildings_primus_conduit.html">魔法座</a></td>
+                <td><a href="bulidingPages/buildings_bunker.html">地堡</a></td>
+                <td><a href="bulidingPages/buildings_arrow_launcher.html">弩弓塔</a></td>
+                <td><a href="bulidingPages/buildings_flare_tower.html">圣光塔</a></td>
+            </tr>
+            <tr>
+                <td><a href="bulidingPages/buildings_status.html">雕像</a></td>
+                <td><a href="bulidingPages/buildings_walls.html">城墙</a></td>
             </tr>
             <tr>
                 <td colspan="4"><h4>生产建筑</h4></td>
             </tr>
             <tr>
-                <td><a href="#">站位</a></td>
-                <td><a href="#">站位</a></td>
-                <td><a href="#">站位</a></td>
-                <td><a href="#">站位</a></td>
+                <td><a href="bulidingPages/buildings_tavern.html">酒馆</a></td>
+                <td><a href="bulidingPages/buildings_gold_smelter.html">炼金厂</a></td>
+                <td><a href="bulidingPages/buildings_gold_storage.html">金库</a></td>
+                <td><a href="bulidingPages/buildings_builder.html">建筑工</a></td>
             </tr>
         </table>
         <div class="row feature">
@@ -95,7 +109,7 @@
                 <table class="table">
                     <tr>
                         <td>名称</td>
-                        <td>据点</td>
+                        <td>堡垒</td>
                     </tr>
                     <tr>
                         <td>图标</td>
@@ -118,7 +132,7 @@
                 </table>
 
                 <table class="table table-bordered table-condensed table-striped">
-                    <caption>等级属性表</caption>
+                    <!--<caption>等级属性表</caption>-->
                     <thead>
                     <tr>
                         <th>等级</th>
@@ -211,7 +225,7 @@
                 </table>
 
                 <table class="table table-bordered table-condensed table-striped">
-                <caption>升级花费表</caption>
+                <!--<caption>升级花费表</caption>-->
                 <thead>
                 <tr>
                     <th>等级</th>
@@ -353,25 +367,7 @@
             </div>
         </div>
 
-        <!--英雄-->
-        <div class="modal fade" id="hero" tabindex="-1" role="dialog" aria-labelledby="modal-label"
-             aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span
-                                aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
-                        <h4 class="modal-title">英雄</h4>
-                    </div>
-                    <div class="modal-body" id="hero-modal">
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
