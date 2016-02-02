@@ -19,6 +19,22 @@
         "content_back":"",
         "id":1,
         "img":[]
+      },
+      {
+        "title":"新年活动",
+        "time":"2016-02-04",
+        "content_front":"",
+        "content_back":"",
+        "id":2,
+        "img":[
+        "images/news/4.jpg",
+        "images/news/5.jpg",
+        "images/news/6.jpg",
+		"images/news/7.jpg",
+        "images/news/8.jpg",
+		"images/news/9.jpg",
+        "images/news/10.jpg"
+		]
       }
     ]
 }
