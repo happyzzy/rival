@@ -109,25 +109,33 @@
             <table class="table">
                 <tr>
                     <td>名称</td>
-                    <td>弓箭塔</td>
+                    <td>魔法塔</td>
                 </tr>
                 <tr>
                     <td>图标</td>
                     <td>
-                        <img src="../images/barracks.png" style="max-width: 30px"/>
+                        <img src="../images/spell_tower.png" style="max-width: 30px"/>
                     </td>
                 </tr>
                 <tr>
                     <td>尺寸</td>
-                    <td>4x4</td>
+                    <td>3x3</td>
                 </tr>
                 <tr>
-                    <td>被摧毁时损失魔力</td>
-                    <td>1</td>
+                    <td>攻击范围</td>
+                    <td>与守护神有关</td>
                 </tr>
                 <tr>
-                    <td>飞龙技能储量</td>
-                    <td>3</td>
+                    <td>攻击类型</td>
+                    <td>法术伤害</td>
+                </tr>
+                <tr>
+                    <td>溅射半径</td>
+                    <td>与守护神有关</td>
+                </tr>
+                <tr>
+                    <td>目标类型</td>
+                    <td>地面,空中</td>
                 </tr>
             </table>
 
@@ -136,72 +144,265 @@
                 <thead>
                 <tr>
                     <th>等级</th>
-                    <th>解锁</th>
-                    <th>时间</th>
-                    <th>花费</th>
-                    <th>HP</th>
+                    <th>升级费用(黄金)</th>
+                    <th>升级费用(银环)</th>
+                    <th>升级时间</th>
                     <th>堡垒等级</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>战士</td>
-                    <td>5分钟</td>
-                    <td>100金</td>
-                    <td>320</td>
+                    <td>400</td>
+                    <td>-</td>
+                    <td>2 分钟</td>
                     <td>1</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>弓弩手</td>
-                    <td>5分钟</td>
-                    <td>200金</td>
-                    <td>375</td>
-                    <td>1</td>
+                    <td>500</td>
+                    <td>-</td>
+                    <td>4 分钟</td>
+                    <td>2</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>鸟</td>
-                    <td>2小时</td>
-                    <td>2,800金</td>
-                    <td>490</td>
-                    <td>3</td>
+                    <td>950</td>
+                    <td>-</td>
+                    <td>12 分钟</td>
+                    <td>2</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>巨人</td>
-                    <td>5小时</td>
-                    <td>34,000金</td>
-                    <td>655</td>
-                    <td>5</td>
+                    <td>2,100</td>
+                    <td>-</td>
+                    <td>1 小时</td>
+                    <td>3</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>圣骑士</td>
-                    <td>9小时</td>
-                    <td>280,000金</td>
-                    <td>770</td>
-                    <td>7</td>
+                    <td>5,700</td>
+                    <td>-</td>
+                    <td>2 小时</td>
+                    <td>4</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>掠夺者</td>
-                    <td>1天3小时</td>
-                    <td>900,000金</td>
-                    <td>940</td>
-                    <td>9</td>
+                    <td>76,000</td>
+                    <td>-</td>
+                    <td>4 小时</td>
+                    <td>6</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td>魔晶使者</td>
-                    <td>6天</td>
-                    <td>3,700,000金, 1,200戒指</td>
-                    <td>1,615</td>
+                    <td>400,000</td>
+                    <td>25</td>
+                    <td>9 小时</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>950,000</td>
+                    <td>75</td>
+                    <td>1 天 9 小时</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>1,600,000</td>
+                    <td>150</td>
+                    <td>2 天 9 小时</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>2,700,000</td>
+                    <td>600</td>
+                    <td>3 天 12 小时</td>
                     <td>14</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>8,900,000</td>
+                    <td>3000</td>
+                    <td>5 天</td>
+                    <td>16</td>
                 </tr>
                 </tbody>
             </table>
+
+
+
+            <table class="table table-bordered table-condensed table-striped">
+                <!--<caption>等级属性表</caption>-->
+                <thead>
+                <tr>
+                    <th>等级</th>
+                    <th>HP</th>
+                    <th>Cast Speed Increase (%)</th>
+                    <th>Cast Speed (seconds)</th>
+                    <th>Cast Speed (Insanity Potion)</th>
+                    <th>Cast Speed (Flame Sprayer)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>16</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>360</td>
+                    <td>5</td>
+                    <td>9.5</td>
+                    <td>15.2</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>405</td>
+                    <td>10</td>
+                    <td>9.1</td>
+                    <td>14.5</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>450</td>
+                    <td>15</td>
+                    <td>8.7</td>
+                    <td>13.9</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>495</td>
+                    <td>20</td>
+                    <td>8.3</td>
+                    <td>13.3</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>630</td>
+                    <td>25</td>
+                    <td>8</td>
+                    <td>12.8</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>765</td>
+                    <td>30</td>
+                    <td>7.7</td>
+                    <td>12.3</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>1,035</td>
+                    <td>35</td>
+                    <td>7.4</td>
+                    <td>11.9</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>1,170</td>
+                    <td>40</td>
+                    <td>7.1</td>
+                    <td>11.4</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>1,395</td>
+                    <td>45</td>
+                    <td>6.9</td>
+                    <td>11</td>
+                    <td>1.5</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>1,800</td>
+                    <td>50</td>
+                    <td>TBC</td>
+                    <td>1.5</td>
+                    <td>16.5</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <table class="table table-bordered table-condensed table-striped">
+                <!--<caption>等级属性表</caption>-->
+                <thead>
+                <tr>
+                    <th>元素</th>
+                    <th>Spell Name</th>
+                    <th>Spell Effect Duration</th>
+                    <th>Trigger Range</th>
+                    <th>Splash Damage Radius</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Fire</td>
+                    <td>Flame Bolt</td>
+                    <td>3 Seconds</td>
+                    <td>8 Tiles</td>
+                    <td>3 Tiles</td>
+                </tr>
+                <tr>
+                    <td>Fire</td>
+                    <td>Flame Sprayer</td>
+                    <td>Immediate</td>
+                    <td>8 Tiles</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Ice (blue)</td>
+                    <td>Flash Freeze</td>
+                    <td>2.5 Seconds</td>
+                    <td>8 Tiles</td>
+                    <td>5 Tiles</td>
+                </tr>
+                <tr>
+                    <td>Nature (green)</td>
+                    <td>Crippling Poison</td>
+                    <td>7 Seconds</td>
+                    <td>8 Tiles</td>
+                    <td>3 Tiles</td>
+                </tr>
+                <tr>
+                    <td>Nature (green)</td>
+                    <td>Insanity Potion</td>
+                    <td>5 Seconds</td>
+                    <td>8 Tiles</td>
+                    <td>3 Tiles</td>
+                </tr>
+                <tr>
+                    <td>Lightning (yellow)</td>
+                    <td>Arc Lightning</td>
+                    <td>1 Second</td>
+                    <td>4 Tiles</td>
+                    <td>4.5 Tiles</td>
+                </tr>
+                <tr>
+                    <td>Death (purple)</td>
+                    <td>Cursed Touch</td>
+                    <td>10 Seconds</td>
+                    <td>8 Tiles</td>
+                    <td>3 Tiles</td>
+                </tr>
+                </tbody>
+            </table>
+
+
 
 
         </div>

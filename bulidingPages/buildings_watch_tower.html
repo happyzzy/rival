@@ -114,20 +114,28 @@
                 <tr>
                     <td>图标</td>
                     <td>
-                        <img src="../images/barracks.png" style="max-width: 30px"/>
+                        <img src="../images/watch_tower.png" style="max-width: 30px"/>
                     </td>
                 </tr>
                 <tr>
                     <td>尺寸</td>
-                    <td>4x4</td>
+                    <td>3x3</td>
                 </tr>
                 <tr>
-                    <td>被摧毁时损失魔力</td>
-                    <td>1</td>
+                    <td>攻击速度</td>
+                    <td>每秒1.33次(0.75s)</td>
                 </tr>
                 <tr>
-                    <td>飞龙技能储量</td>
-                    <td>3</td>
+                    <td>攻击范围</td>
+                    <td>9 tiles</td>
+                </tr>
+                <tr>
+                    <td>伤害类型</td>
+                    <td>物理,单体</td>
+                </tr>
+                <tr>
+                    <td>目标类型</td>
+                    <td>地面,空中</td>
                 </tr>
             </table>
 
@@ -136,72 +144,253 @@
                 <thead>
                 <tr>
                     <th>等级</th>
-                    <th>解锁</th>
-                    <th>时间</th>
-                    <th>花费</th>
-                    <th>HP</th>
+                    <th>升级费用(黄金)</th>
+                    <th>升级费用(银环)</th>
+                    <th>升级时间</th>
                     <th>堡垒等级</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>战士</td>
-                    <td>5分钟</td>
-                    <td>100金</td>
-                    <td>320</td>
+                    <td>390</td>
+                    <td>-</td>
+                    <td>2 分钟</td>
                     <td>1</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>弓弩手</td>
-                    <td>5分钟</td>
-                    <td>200金</td>
-                    <td>375</td>
+                    <td>430</td>
+                    <td>-</td>
+                    <td>4 分钟</td>
                     <td>1</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>鸟</td>
-                    <td>2小时</td>
-                    <td>2,800金</td>
-                    <td>490</td>
-                    <td>3</td>
+                    <td>900</td>
+                    <td>-</td>
+                    <td>12 分钟</td>
+                    <td>2</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>巨人</td>
-                    <td>5小时</td>
-                    <td>34,000金</td>
-                    <td>655</td>
-                    <td>5</td>
+                    <td>2,000</td>
+                    <td>-</td>
+                    <td>1 小时</td>
+                    <td>3</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>圣骑士</td>
-                    <td>9小时</td>
-                    <td>280,000金</td>
-                    <td>770</td>
-                    <td>7</td>
+                    <td>5,400</td>
+                    <td>-</td>
+                    <td>2 小时</td>
+                    <td>4</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>掠夺者</td>
-                    <td>1天3小时</td>
-                    <td>900,000金</td>
-                    <td>940</td>
-                    <td>9</td>
+                    <td>20,000</td>
+                    <td>-</td>
+                    <td>3 小时</td>
+                    <td>5</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td>魔晶使者</td>
-                    <td>6天</td>
-                    <td>3,700,000金, 1,200戒指</td>
-                    <td>1,615</td>
+                    <td>72,000</td>
+                    <td>-</td>
+                    <td>4 小时</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>180,000</td>
+                    <td>-</td>
+                    <td>5 小时</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>380,000</td>
+                    <td>25</td>
+                    <td>9 小时</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>590,000</td>
+                    <td>50</td>
+                    <td>14 小时</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>900,000</td>
+                    <td>75</td>
+                    <td>1 天 9 小时</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>1,200,000</td>
+                    <td>125</td>
+                    <td>2 天</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>1,500,000</td>
+                    <td>150</td>
+                    <td>2 天 9 小时</td>
+                    <td>12</td>
+                </tr>
+                <tr>
                     <td>14</td>
+                    <td>2,000,000</td>
+                    <td>225</td>
+                    <td>3 天</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>2,600,000</td>
+                    <td>600</td>
+                    <td>3 天 12 小时</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>3,400,000</td>
+                    <td>1,000</td>
+                    <td>5 天</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>6,050,000</td>
+                    <td>2,200</td>
+                    <td>7 天</td>
+                    <td>16</td>
                 </tr>
                 </tbody>
             </table>
+
+
+
+            <table class="table table-bordered table-condensed table-striped">
+                <!--<caption>等级属性表</caption>-->
+                <thead>
+                <tr>
+                    <th>等级</th>
+                    <th>HP</th>
+                    <th>秒伤</th>
+                    <th>每次攻击</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>295</td>
+                    <td>13.2</td>
+                    <td>9 - 11</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>335</td>
+                    <td>15.4</td>
+                    <td>10 - 13</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>380</td>
+                    <td>17.6</td>
+                    <td>12 - 14</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>420</td>
+                    <td>19.8</td>
+                    <td>14 - 16</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>460</td>
+                    <td>22.0</td>
+                    <td>15 - 18</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>545</td>
+                    <td>24.2</td>
+                    <td>16 - 20</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>590</td>
+                    <td>26.4</td>
+                    <td>18 - 22</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>630</td>
+                    <td>28.6</td>
+                    <td>20 - 23</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>715</td>
+                    <td>30.8</td>
+                    <td>21 - 25</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>755</td>
+                    <td>33.0</td>
+                    <td>22 - 27</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>800</td>
+                    <td>37.4</td>
+                    <td>26 - 31</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>840</td>
+                    <td>41.8</td>
+                    <td>28 - 34</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>880</td>
+                    <td>46.2</td>
+                    <td>32 - 38</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>925</td>
+                    <td>50.6</td>
+                    <td>34 - 41</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>1090</td>
+                    <td>55.0</td>
+                    <td>38 - 45</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>1260</td>
+                    <td>63.8</td>
+                    <td>44 - 52</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>1650</td>
+                    <td>84.80</td>
+                    <td>57 - 69</td>
+                </tr>
+                </tbody>
+            </table>
+
 
 
         </div>
