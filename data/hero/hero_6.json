@@ -1,16 +1,15 @@
 {
   "hero": {
     "name": "纳提",
-    "img": "",
     "no": 1,
     "type": "hero",
-    "description": "纳提。品质：稀有。纳提可以在古宝箱,忠诚宝箱,以及竞技场箱子中找到。",
+    "description": "纳提。品质：稀有。纳提可以在古宝箱,忠诚宝箱,稀有守护神宝箱,以及竞技场箱子中找到。",
     "img": [
-      "images/ancients/3/3_hero_pic.jpg",
-      "images/ancients/3/3_skills_1.png",
-      "images/ancients/3/3_skills_2.png",
-      "images/ancients/3/3_skills_3.png",
-      "images/ancients/3/3_skills_4.png"
+      "images/ancients/6/6_hero_pic.jpg",
+      "images/ancients/6/6_skills_1.png",
+      "images/ancients/6/6_skills_2.png",
+      "images/ancients/6/6_skills_3.png",
+      "images/ancients/6/6_skills_4.png"
     ],
     "skills_1_conf": {
       "number": 2,
