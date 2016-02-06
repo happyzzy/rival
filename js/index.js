@@ -114,7 +114,7 @@ function onclick_a(no) {
         '<div class="tab-content"> ' +
         '<div class="tab-pane active container" id="tab1">' +
         '<table class="table" style="max-width:530px">' +
-        '<tr><td><img height=180 width=220 src="' + data.hero.img[0] + '"/></td>' +
+        '<tr><td><img width=220 src="' + data.hero.img[0] + '"/></td>' +
         '<tr><td>' + data.hero.description + '</td></tr>' +
         '</td></tr>' +
         '</table>' +
