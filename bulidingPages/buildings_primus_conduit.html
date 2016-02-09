@@ -85,7 +85,7 @@
             <td><a href="buildings_skywatcher.html">防空塔</a></td>
         </tr>
         <tr>
-            <td><a href="buildings_primus_conduit.html">魔法座(未完成)</a></td>
+            <td style="background-color: #f0ad4e;"><a href="buildings_primus_conduit.html">魔法座</a></td>
             <td><a href="buildings_bunker.html">地堡(未完成)</a></td>
             <td><a href="buildings_arrow_launcher.html">弩弓塔(未完成)</a></td>
             <td><a href="buildings_flare_tower.html">圣光塔(未完成)</a></td>
@@ -109,25 +109,21 @@
             <table class="table">
                 <tr>
                     <td>名称</td>
-                    <td>弓箭塔</td>
+                    <td>魔法座</td>
                 </tr>
                 <tr>
                     <td>图标</td>
                     <td>
-                        <img src="../images/barracks.png" style="max-width: 30px"/>
+                        <img src="../images/primus_conduit.png" style="max-width: 30px"/>
                     </td>
                 </tr>
                 <tr>
                     <td>尺寸</td>
-                    <td>4x4</td>
+                    <td>3x3</td>
                 </tr>
                 <tr>
                     <td>被摧毁时损失魔力</td>
                     <td>1</td>
-                </tr>
-                <tr>
-                    <td>飞龙技能储量</td>
-                    <td>3</td>
                 </tr>
             </table>
 
@@ -136,73 +132,182 @@
                 <thead>
                 <tr>
                     <th>等级</th>
-                    <th>解锁</th>
-                    <th>时间</th>
-                    <th>花费</th>
-                    <th>HP</th>
+                    <th>升级费用(黄金)</th>
+                    <th>升级费用(银环)</th>
+                    <th>升级时间</th>
                     <th>堡垒等级</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>战士</td>
-                    <td>5分钟</td>
-                    <td>100金</td>
-                    <td>320</td>
-                    <td>1</td>
+                    <td>18,000</td>
+                    <td>-</td>
+                    <td>3 小时</td>
+                    <td>5</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>弓弩手</td>
-                    <td>5分钟</td>
-                    <td>200金</td>
-                    <td>375</td>
-                    <td>1</td>
+                    <td>30,000</td>
+                    <td>-</td>
+                    <td>3 小时 30 分钟</td>
+                    <td>5</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>鸟</td>
-                    <td>2小时</td>
-                    <td>2,800金</td>
-                    <td>490</td>
-                    <td>3</td>
+                    <td>68,000</td>
+                    <td>-</td>
+                    <td>4 小时</td>
+                    <td>6</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>巨人</td>
-                    <td>5小时</td>
-                    <td>34,000金</td>
-                    <td>655</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>圣骑士</td>
-                    <td>9小时</td>
-                    <td>280,000金</td>
-                    <td>770</td>
+                    <td>170,000</td>
+                    <td>-</td>
+                    <td>5 小时</td>
                     <td>7</td>
                 </tr>
                 <tr>
-                    <td>6</td>
-                    <td>掠夺者</td>
-                    <td>1天3小时</td>
-                    <td>900,000金</td>
-                    <td>940</td>
+                    <td>5</td>
+                    <td>560,000</td>
+                    <td>50</td>
+                    <td>13 小时</td>
                     <td>9</td>
                 </tr>
                 <tr>
+                    <td>6</td>
+                    <td>860,000</td>
+                    <td>70</td>
+                    <td>1 天 8 小时</td>
+                    <td>10</td>
+                </tr>
+                <tr>
                     <td>7</td>
-                    <td>魔晶使者</td>
-                    <td>6天</td>
-                    <td>3,700,000金, 1,200戒指</td>
-                    <td>1,615</td>
-                    <td>14</td>
+                    <td>1,400,000</td>
+                    <td>140</td>
+                    <td>2 天 8 小时</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>1,900,000</td>
+                    <td>200</td>
+                    <td>3 天</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>3,200,000</td>
+                    <td>900</td>
+                    <td>5 天</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>5,700,000</td>
+                    <td>1,700</td>
+                    <td>6 天</td>
+                    <td>16</td>
                 </tr>
                 </tbody>
             </table>
 
+
+            <table class="table table-bordered table-condensed table-striped">
+                <!--<caption>等级属性表</caption>-->
+                <thead>
+                <tr>
+                    <th>等级</th>
+                    <th>HP</th>
+                    <th>增强</th>
+                    <th>增强花费(黄金)</th>
+                    <th>全力增强</th>
+                    <th>全力增强花费(黄金)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>325</td>
+                    <td>20%</td>
+                    <td>550</td>
+                    <td>40%</td>
+                    <td>3,375</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>395</td>
+                    <td>21%</td>
+                    <td>800</td>
+                    <td>42%</td>
+                    <td>4,950</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>430</td>
+                    <td>22%</td>
+                    <td>1,800</td>
+                    <td>44%</td>
+                    <td>10,800</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>460</td>
+                    <td>23%</td>
+                    <td>4,400</td>
+                    <td>46%</td>
+                    <td>26,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>565</td>
+                    <td>24%</td>
+                    <td>25,000</td>
+                    <td>48%</td>
+                    <td>125,000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>630</td>
+                    <td>25%</td>
+                    <td>50,000</td>
+                    <td>50%</td>
+                    <td>275,000</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>765</td>
+                    <td>26%</td>
+                    <td>100,000</td>
+                    <td>52%</td>
+                    <td>550,000</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>835</td>
+                    <td>27%</td>
+                    <td>150,000</td>
+                    <td>54%</td>
+                    <td>850,000</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>1,105</td>
+                    <td>28%</td>
+                    <td>200,000</td>
+                    <td>56%</td>
+                    <td>1,000,000</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>1,450</td>
+                    <td>30%</td>
+                    <td>250,000</td>
+                    <td>60%</td>
+                    <td>1,250,000</td>
+                </tr>
+                </tbody>
+            </table>
 
         </div>
     </div>
