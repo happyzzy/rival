@@ -27,6 +27,22 @@
 		"images/news/9.jpg",
         "images/news/10.jpg"
 		]
-      }
+      },
+    {
+      "title":"  寿桃大劫役",
+      "time":"2016-02-12",
+      "content_front":"",
+      "content_back":"转自：“竞逐之国” 贴吧 “佑赫拉” 的分享 ",
+      "id":2,
+      "img":[
+        "images/news/11.jpg",
+        "images/news/12.jpg",
+        "images/news/13.jpg",
+        "images/news/14.jpg",
+        "images/news/15.jpg",
+        "images/news/16.jpg",
+        "images/news/17.jpg"
+      ]
+    }
     ]
 }
