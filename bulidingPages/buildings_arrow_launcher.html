@@ -82,12 +82,12 @@
             <td><a href="buildings_watch_tower.html">弓箭塔</a></td>
             <td><a href="buildings_spell_tower.html">魔法塔</a></td>
             <td><a href="buildings_catapult.html">投石器</a></td>
-            <td style="background-color: #f0ad4e;"><a href="buildings_skywatcher.html">防空塔</a></td>
+            <td><a href="buildings_skywatcher.html">防空塔</a></td>
         </tr>
         <tr>
             <td><a href="buildings_primus_conduit.html">魔法座</a></td>
             <td><a href="buildings_bunker.html">地堡</a></td>
-            <td><a href="buildings_arrow_launcher.html">弩弓塔</a></td>
+            <td style="background-color: #f0ad4e;"><a href="buildings_arrow_launcher.html">弩弓塔</a></td>
             <td><a href="buildings_flare_tower.html">圣光塔(未完成)</a></td>
         </tr>
         <tr>
@@ -109,12 +109,12 @@
             <table class="table">
                 <tr>
                     <td>名称</td>
-                    <td>防空塔</td>
+                    <td>魔法座</td>
                 </tr>
                 <tr>
                     <td>图标</td>
                     <td>
-                        <img src="../images/skywatcher.png" style="max-width: 30px"/>
+                        <img src="../images/arrow_launcher.png" style="max-width: 30px"/>
                     </td>
                 </tr>
                 <tr>
@@ -127,23 +127,15 @@
                 </tr>
                 <tr>
                     <td>射程</td>
-                    <td>8 tiles</td>
+                    <td>7-18 tiles</td>
+                </tr>
+                <tr>
+                    <td>目标类型</td>
+                    <td>地面</td>
                 </tr>
                 <tr>
                     <td>伤害类型</td>
-                    <td>物理</td>
-                </tr>
-                <tr>
-                    <td>溅射半径</td>
-                    <td>2 tiles</td>
-                </tr>
-                <tr>
-                    <td>攻击目标</td>
-                    <td>空中</td>
-                </tr>
-                <tr>
-                    <td>被摧毁时损失魔力</td>
-                    <td>1</td>
+                    <td>物理,范围</td>
                 </tr>
             </table>
 
@@ -153,64 +145,52 @@
                 <tr>
                     <th>等级</th>
                     <th>HP</th>
-                    <th>秒伤</th>
-                    <th>每次攻击溅射伤害</th>
+                    <th>每秒伤害</th>
+                    <th>每次伤害</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>430</td>
-                    <td>4.2</td>
-                    <td>11 - 14, + 8%最大生命值</td>
+                    <td>715</td>
+                    <td>5.3</td>
+                    <td>16</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>505</td>
-                    <td>4.5</td>
-                    <td>12 - 15, + 8%最大生命值</td>
+                    <td>755</td>
+                    <td>5.6</td>
+                    <td>17</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>545</td>
-                    <td>5.2</td>
-                    <td>14 - 17, + 8%最大生命值</td>
+                    <td>800</td>
+                    <td>6.4</td>
+                    <td>19</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>585</td>
-                    <td>5.7</td>
-                    <td>15 - 19, + 8%最大生命值</td>
+                    <td>880</td>
+                    <td>7.9</td>
+                    <td>24</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>700</td>
-                    <td>7.5</td>
-                    <td>20 - 25, + 8%最大生命值</td>
+                    <td>1175</td>
+                    <td>9.4</td>
+                    <td>28</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>780</td>
-                    <td>9.2</td>
-                    <td>24 - 31, + 8%最大生命值</td>
+                    <td>1385</td>
+                    <td>10.9</td>
+                    <td>33</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td>860</td>
-                    <td>11.3</td>
-                    <td>30 - 38, + 8%最大生命值</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>1,170</td>
-                    <td>13.7</td>
-                    <td>36 - 46, + 8%最大生命值</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>1,325</td>
-                    <td>15.0</td>
-                    <td>40 - 50, + 8%最大生命值</td>
+                    <td>1650</td>
+                    <td>17.64</td>
+                    <td>54 - 63</td>
                 </tr>
                 </tbody>
             </table>
@@ -229,77 +209,59 @@
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>18,00</td>
-                    <td>-</td>
-                    <td>3 小时</td>
-                    <td>5</td>
+                    <td>770,000</td>
+                    <td>80</td>
+                    <td>21 小时</td>
+                    <td>9</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>27,000</td>
-                    <td>-</td>
-                    <td>3 小时 30 分钟</td>
-                    <td>5</td>
+                    <td>960,000</td>
+                    <td>90</td>
+                    <td>1 天 6 小时</td>
+                    <td>9</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>65,000</td>
-                    <td>-</td>
-                    <td>4 小时</td>
-                    <td>6</td>
+                    <td>1,300,000</td>
+                    <td>120</td>
+                    <td>2 天 14 小时</td>
+                    <td>10</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>160,000</td>
-                    <td>-</td>
-                    <td>6 小时</td>
-                    <td>7</td>
+                    <td>2,300,000</td>
+                    <td>240</td>
+                    <td>3 天 14 小时</td>
+                    <td>12</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>510,000</td>
-                    <td>60</td>
-                    <td>15 小时</td>
-                    <td>9</td>
+                    <td>4,000,000</td>
+                    <td>960</td>
+                    <td>5 天 18 小时</td>
+                    <td>14</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>1,100,000</td>
-                    <td>144</td>
-                    <td>2 天</td>
-                    <td>11</td>
+                    <td>5,000,000</td>
+                    <td>1,600</td>
+                    <td>8 Days</td>
+                    <td>15</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td>1,800,000</td>
-                    <td>248</td>
-                    <td>3 天</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>3,100,000</td>
-                    <td>1,100</td>
-                    <td>6 天</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>4,200,000</td>
-                    <td>2,200</td>
-                    <td>7 天</td>
-                    <td>15</td>
+                    <td>7,830,000</td>
+                    <td>3,000</td>
+                    <td>10 天</td>
+                    <td>16</td>
                 </tr>
                 </tbody>
             </table>
 
 
-
-
-
-
             <table class="table table-bordered table-condensed table-striped">
-                <!--<caption>等级属性表</caption>-->
+                <!--<caption>秘银升级花费表</caption>-->
                 <thead>
                 <tr>
                     <th>秘银升级次数</th>
@@ -311,27 +273,27 @@
                 <tr>
                     <td>1</td>
                     <td>1</td>
-                    <td>200</td>
+                    <td>350</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>2</td>
-                    <td>400</td>
+                    <td>780</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>3</td>
-                    <td>800</td>
+                    <td>1400</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>4</td>
-                    <td>1600</td>
+                    <td>2350</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>5</td>
-                    <td>2800</td>
+                    <td>3600</td>
                 </tr>
                 </tbody>
             </table>
