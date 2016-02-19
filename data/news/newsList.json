@@ -46,12 +46,23 @@
       ]
     },
     {
-      "title":"周末三小活动<span style='color:red'>new</span>",
+      "title":"三重大混战<span style='color:red'>new</span>",
       "time":"2016-02-18",
-      "content_front":"<br>1.18日周四21点开始，限时任务，使用海格尔、凯斯拉、亚兰提胜利100场将获得一个禁忌魔典（可以将埃洛尼等人最多人升级到50级，作为塔应该很强），最多获得三个（三人各打100场）。<br>2.19日周五22点开始，24小时内金币捐献个人排行，有雷坑可捐（刷贡献的好机会！），捐献排行前五的可以获得改名机会一次，捐献前10000有秘银一颗，前25000有一个秘银重置锤（省了拆秘银的钻？）。<br>3.21号周日8点开始王国戒指赛，至23号周二8点截止，戒指获取数排名，礼包不算，个人赛不算，国战不算，只算从竞技和多人中获取的戒指。奖励颇丰，第一的王国一金二银三铜箱子，还有一秘银。",
+      "content_front":"",
       "content_back":"转自：“竞逐之国” 贴吧 “William丶★(大吧主)” 的分享 ",
       "id":3,
-      "img":[]
+      "img":[
+        "images/news/19.jpg",
+        "images/news/20.jpg",
+        "images/news/21.jpg",
+        "images/news/22.jpg",
+        "images/news/23.jpg",
+        "images/news/24.jpg",
+        "images/news/25.jpg",
+        "images/news/26.jpg",
+        "images/news/27.jpg",
+        "images/news/28.jpg"
+      ]
     }
     ]
 }
