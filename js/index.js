@@ -114,7 +114,7 @@ function onclick_a(no) {
         '<div class="tab-content"> ' +
         '<div class="tab-pane active container" id="tab1">' +
         '<table class="table" style="max-width:530px">' +
-        '<tr><td><img width=220 src="' + data.hero.img[0] + '"/></td>' +
+        '<tr><td><img width=220 alt="守护神头像" src="' + data.hero.img[0] + '"/></td>' +
         '<tr><td>' + data.hero.description + '</td></tr>' +
         '</td></tr>' +
         '</table>' +
@@ -123,7 +123,7 @@ function onclick_a(no) {
 
         '<div class="tab-pane container" id="tab2">' +
         '<table class="table" style="max-width:530px">' +
-        '<tr><td><img height=50 width=50 src="' + data.hero.img[1] +
+        '<tr><td><img height=50 width=50 alt="守护神技能1" src="' + data.hero.img[1] +
         '"/></td><td colspan="' + skillCol_1 + '">' +
         data.hero.skills_1_conf.description +
         '</td></tr>' +
@@ -134,7 +134,7 @@ function onclick_a(no) {
 
         '<div class="tab-pane container" id="tab3">' +
         '<table class="table" style="max-width:530px">' +
-        '<tr><td><img height=50 width=50 src="' + data.hero.img[2] +
+        '<tr><td><img height=50 width=50 alt="守护神技能2" src="' + data.hero.img[2] +
         '"/></td><td colspan="' + skillCol_2 + '">' +
         data.hero.skills_2_conf.description +
         '</td></tr>' +
@@ -144,7 +144,7 @@ function onclick_a(no) {
 
         '<div class="tab-pane container" id="tab4">' +
         '<table class="table" style="max-width:530px">' +
-        '<tr><td><img height=50 width=50 src="' + data.hero.img[3] +
+        '<tr><td><img height=50 width=50 alt="守护神技能3" src="' + data.hero.img[3] +
         '"/></td><td colspan="' + skillCol_3 + '">' +
         data.hero.skills_3_conf.description +
         '</td></tr>' +
@@ -154,7 +154,7 @@ function onclick_a(no) {
 
         '<div class="tab-pane container" id="tab5">' +
         '<table class="table" style="max-width:530px">' +
-        '<tr><td><img height=50 width=50 src="' + data.hero.img[4] +
+        '<tr><td><img height=50 width=50 alt="守护神技能4" src="' + data.hero.img[4] +
         '"/></td><td colspan="' + skillCol_4 + '">' +
         data.hero.skills_4_conf.description +
         '</td></tr>' +

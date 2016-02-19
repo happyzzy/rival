@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="keywords" content="竞逐之国,rivalkingdoms,rival"/>
-    <meta name="description" content="测试版本v0.9,测试阶段界面变化较大,使用相对不稳定,初衷只面向部分测试用户开放,正式版本预计2月7日上线,敬请期待!" />
+    <meta name="keywords" content="竞逐之国,rivalkingdoms,rival,守护神,建筑,兵种,活动,资料库,数据大全,图鉴,守护神数据"/>
+    <meta name="description" content="rivalkingdoms竞逐之国中文资料库" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no">
-    <title>竞逐之国</title>
+    <title>竞逐之国中文资料库</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -162,7 +162,7 @@
             var img = '';
             if(news[id].img){
                 for(var i = 0; i < news[id].img.length;i++){
-                    img +='<img style="width:100%"' + ' src="' + news[id].img[i] +  '"/><br>'
+                    img +='<img style="width:100%" alt="活动图片"' + ' src="' + news[id].img[i] +  '"/><br>'
                 }
             }
             var html_content = content_front + img + content_back;
