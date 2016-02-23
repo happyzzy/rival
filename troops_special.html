@@ -65,6 +65,15 @@
             <li><a href="#tab-greaterFireElemental" role="tab" data-toggle="tab">强力火元素</a></li>
             <li><a href="#tab-iceElemental" role="tab" data-toggle="tab">冰元素</a></li>
             <li><a href="#tab-natureElemental" role="tab" data-toggle="tab">自然元素</a></li>
+            <li><a href="#tab-lightningElemental" role="tab" data-toggle="tab">雷系元素</a></li>
+            <li><a href="#tab-deathlemental" role="tab" data-toggle="tab">死亡元素</a></li>
+            <li><a href="#tab-deathKnight" role="tab" data-toggle="tab">死亡骑士</a></li>
+            <li><a href="#tab-natureElemental" role="tab" data-toggle="tab">幻术战士</a></li>
+            <li><a href="#tab-natureElemental" role="tab" data-toggle="tab">毒血亡灵</a></li>
+            <li><a href="#tab-natureElemental" role="tab" data-toggle="tab">死灵战士</a></li>
+            <li><a href="#tab-natureElemental" role="tab" data-toggle="tab">狂暴战士</a></li>
+
+
             <li><a href="#" role="tab" data-toggle="tab">待续</a></li>
         </ul>
 
@@ -80,7 +89,7 @@
                             <tr>
                                 <td>图标</td>
                                 <td>
-                                    <img src="images/fire_elemental.png" style="max-width: 30px"/>
+                                    <img src="images/fire_elemental.png" alt="火元素" style="max-width: 30px"/>
                                 </td>
                             </tr>
                             <tr>
@@ -240,7 +249,7 @@
                             <tr>
                                 <td>图标</td>
                                 <td>
-                                    <img src="images/fire_elemental.png" style="max-width: 30px"/>
+                                    <img src="images/fire_elemental.png" alt="强力火元素" style="max-width: 30px"/>
                                 </td>
                             </tr>
                             <tr>
@@ -400,7 +409,7 @@
                             <tr>
                                 <td>图标</td>
                                 <td>
-                                    <img src="images/ice_elemental.png" style="max-width: 30px"/>
+                                    <img src="images/ice_elemental.png" alt="冰元素" style="max-width: 30px"/>
                                 </td>
                             </tr>
                             <tr>
@@ -421,7 +430,7 @@
                             </tr>
                             <tr>
                                 <td>特殊能力</td>
-                                <td>冰火元素从被摧毁的建筑中吸收魔力，提高他们的攻击力。此外火元素死亡会冻结周围建筑</td>
+                                <td>冰火元素从被摧毁的建筑中吸收魔力，提高他们的攻击力。此外冰元素死亡会冻结周围建筑</td>
                             </tr>
                             <tr>
                                 <td>魔力吸取上限</td>
@@ -564,7 +573,7 @@
                             <tr>
                                 <td>图标</td>
                                 <td>
-                                    <img src="images/nature_elemental.png" style="max-width: 30px"/>
+                                    <img src="images/nature_elemental.png" alt="自然元素" style="max-width: 30px"/>
                                 </td>
                             </tr>
                             <tr>
@@ -585,7 +594,7 @@
                             </tr>
                             <tr>
                                 <td>特殊能力</td>
-                                <td>冰火元素从被摧毁的建筑中吸收魔力，提高他们的攻击力。此外火元素死亡会爆炸并对周围建筑溅射毒药</td>
+                                <td>冰火元素从被摧毁的建筑中吸收魔力，提高他们的攻击力。此外自然元素死亡会爆炸并对周围建筑溅射毒药</td>
                             </tr>
                             <tr>
                                 <td>魔力吸取上限</td>
@@ -594,10 +603,6 @@
                             <tr>
                                 <td>伤害提升上限</td>
                                 <td>150%</td>
-                            </tr>
-                            <tr>
-                                <td>冻结时间</td>
-                                <td>4s</td>
                             </tr>
                             <tr>
                                 <td>攻击偏好</td>
@@ -717,6 +722,457 @@
                     </div>
                 </div>
             </div>
+            <div class="tab-pane container" id="tab-lightningElemental">
+                <div class="row feature">
+                    <div class="col-md-12">
+                        <table class="table">
+                            <tr>
+                                <td>名称</td>
+                                <td>雷系元素</td>
+                            </tr>
+                            <tr>
+                                <td>图标</td>
+                                <td>
+                                    <img src="images/lightning_elemental.png" alt="雷系元素" style="max-width: 30px"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>射程</td>
+                                <td>4 Tiles</td>
+                            </tr>
+                            <tr>
+                                <td>部队规模</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>移动速度</td>
+                                <td>2.4</td>
+                            </tr>
+                            <tr>
+                                <td>攻击速度</td>
+                                <td>每秒攻击0.625下 (1.6s攻击间隔)</td>
+                            </tr>
+                            <tr>
+                                <td>特殊能力</td>
+                                <td>冰火元素从被摧毁的建筑中吸收魔力，提高他们的攻击力。此外，雷系元素的攻击可以弹跳</td>
+                            </tr>
+                            <tr>
+                                <td>魔力吸取上限</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>伤害提升上限</td>
+                                <td>150%</td>
+                            </tr>
+                            <tr>
+                                <td>攻击弹跳</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>攻击偏好</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>弱点</td>
+                                <td>冰冻伤害</td>
+                            </tr>
+                        </table>
+
+                        <table class="table table-bordered table-condensed table-striped">
+                            <!--<caption>等级属性表</caption>-->
+                            <thead>
+                            <tr>
+                                <th>等级</th>
+                                <th>生命值</th>
+                                <th>每秒伤害</th>
+                                <th>目标伤害</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>120</td>
+                                <td>3.13</td>
+                                <td>4 - 6</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>130</td>
+                                <td>3.75</td>
+                                <td>5 - 7</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>160</td>
+                                <td>4.69</td>
+                                <td>6 - 9</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>190</td>
+                                <td>5.31</td>
+                                <td>7 - 10</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>205</td>
+                                <td>5.63</td>
+                                <td>7 - 11</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>220</td>
+                                <td>6.25</td>
+                                <td>8 - 12</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>235</td>
+                                <td>6.56</td>
+                                <td>8 - 13</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>250</td>
+                                <td>7.19</td>
+                                <td>9 - 14</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>265</td>
+                                <td>7.50</td>
+                                <td>10 - 14</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>280</td>
+                                <td>7.81</td>
+                                <td>10 - 15</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>295</td>
+                                <td>8.44</td>
+                                <td>11 - 16</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>310</td>
+                                <td>8.75</td>
+                                <td>11 - 17</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>325</td>
+                                <td>9.38</td>
+                                <td>12 - 18</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container" id="tab-deathlemental">
+                <div class="row feature">
+                    <div class="col-md-12">
+                        <table class="table">
+                            <tr>
+                                <td>名称</td>
+                                <td>死亡元素</td>
+                            </tr>
+                            <tr>
+                                <td>图标</td>
+                                <td>
+                                    <img src="images/death_elemental.png" alt="死亡元素" style="max-width: 30px"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>射程</td>
+                                <td>近战</td>
+                            </tr>
+                            <tr>
+                                <td>部队规模</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>移动速度</td>
+                                <td>2.4</td>
+                            </tr>
+                            <tr>
+                                <td>攻击速度</td>
+                                <td>每秒攻击0.625下 (1.6s攻击间隔)</td>
+                            </tr>
+                            <tr>
+                                <td>特殊能力</td>
+                                <td>死亡元素的召唤需要献祭，献祭花费越大，召唤的死亡元素越强大</td>
+                            </tr>
+                            <tr>
+                                <td>最大献祭数</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>额外血量</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>额外伤害</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>攻击偏好</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>弱点</td>
+                                <td>无</td>
+                            </tr>
+                        </table>
+
+                        <table class="table table-bordered table-condensed table-striped">
+                            <!--<caption>等级属性表</caption>-->
+                            <thead>
+                            <tr>
+                                <th>等级</th>
+                                <th>生命值</th>
+                                <th>每秒伤害</th>
+                                <th>目标伤害</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>150</td>
+                                <td>11.25</td>
+                                <td>14 - 22</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>160</td>
+                                <td>12.19</td>
+                                <td>16 - 23</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>200</td>
+                                <td>15.00</td>
+                                <td>19 - 29</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>240</td>
+                                <td>17.81</td>
+                                <td>23 - 34</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>250</td>
+                                <td>19.38</td>
+                                <td>25 - 37</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>270</td>
+                                <td>20.63</td>
+                                <td>26 - 40</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>290</td>
+                                <td>21.88</td>
+                                <td>28 - 42</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>310</td>
+                                <td>23.44</td>
+                                <td>30 - 45</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>330</td>
+                                <td>25.00</td>
+                                <td>32 - 48</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>350</td>
+                                <td>26.25</td>
+                                <td>34 - 50</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>370</td>
+                                <td>27.50</td>
+                                <td>35 - 53</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>380</td>
+                                <td>29.06</td>
+                                <td>37 - 56</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>400</td>
+                                <td>30.63</td>
+                                <td>39 - 59</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container" id="tab-deathKnight">
+                <div class="row feature">
+                    <div class="col-md-12">
+                        <table class="table">
+                            <tr>
+                                <td>名称</td>
+                                <td>死亡骑士</td>
+                            </tr>
+                            <tr>
+                                <td>图标</td>
+                                <td>
+                                    <img src="images/death_knight.png" alt="死亡骑士" style="max-width: 30px"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>射程</td>
+                                <td>近战</td>
+                            </tr>
+                            <tr>
+                                <td>部队规模</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>移动速度</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>攻击速度</td>
+                                <td>每秒攻击0.463下 (2.16s攻击间隔)</td>
+                            </tr>
+                            <tr>
+                                <td>特殊能力</td>
+                                <td>给予周围军队生命窃取能力，同一时间不同死亡骑士的光环可以叠加5层</td>
+                            </tr>
+                            <tr>
+                                <td>生命窃取光环</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>光环范围</td>
+                                <td>5 Tiles</td>
+                            </tr>
+                            <tr>
+                                <td>攻击偏好</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>弱点</td>
+                                <td>诅咒之触</td>
+                            </tr>
+                        </table>
+
+                        <table class="table table-bordered table-condensed table-striped">
+                            <!--<caption>等级属性表</caption>-->
+                            <thead>
+                            <tr>
+                                <th>等级</th>
+                                <th>生命值</th>
+                                <th>每秒伤害</th>
+                                <th>目标伤害</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>125</td>
+                                <td>27.78</td>
+                                <td>48 - 72</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>135</td>
+                                <td>30.09</td>
+                                <td>52 - 78</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>165</td>
+                                <td>37.04</td>
+                                <td>64 - 96</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>200</td>
+                                <td>43.98</td>
+                                <td>76 - 114</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>215</td>
+                                <td>47.45</td>
+                                <td>82 - 123</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>230</td>
+                                <td>50.93</td>
+                                <td>88 - 132</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>245</td>
+                                <td>54.40</td>
+                                <td>94 - 141</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>260</td>
+                                <td>57.87</td>
+                                <td>100 - 150</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>275</td>
+                                <td>61.34</td>
+                                <td>106 - 159</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>290</td>
+                                <td>64.81</td>
+                                <td>112 - 168</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>305</td>
+                                <td>68.29</td>
+                                <td>118 - 177</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>320</td>
+                                <td>71.76</td>
+                                <td>124 - 186</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>340</td>
+                                <td>75.23</td>
+                                <td>130 - 195</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
 
 
