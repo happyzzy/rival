@@ -61,9 +61,30 @@
 
     <!--主要内容-->
     <div class="container summary">
-        <h2>最新活动</h2>
-        <ol id="news">
-        </ol>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>最新活动</h2>
+                <ol id="news">
+                </ol>
+            </div>
+            <div class="col-md-6" style="padding-top: 60px">
+                <script>
+                if(document.body.clientWidth <= 640){
+                    var sogou_ad_id=538500;
+                    var sogou_ad_height=50;
+                    var sogou_ad_width=275;
+                }else{
+                    var sogou_ad_id=545028;
+                    var sogou_ad_height=60;
+                    var sogou_ad_width=468;
+                }
+                </script>
+                <script type='text/javascript' src='http://images.sohu.com/cs/jsfile/js/c.js'></script>
+            </div>
+        </div>
+
+
+
 
         <!--新闻-->
         <div class="modal fade" id="newsPage" tabindex="-1" role="dialog" aria-labelledby="modal-label"
@@ -107,18 +128,7 @@
         </div>
 
 
-        <!--<script>-->
-            <!--if(document.body.clientWidth <= 640){-->
-                <!--var sogou_ad_id=538500;-->
-                <!--var sogou_ad_height=50;-->
-                <!--var sogou_ad_width=275;-->
-            <!--}else{-->
-                <!--var sogou_ad_id=538495;-->
-                <!--var sogou_ad_height=60;-->
-                <!--var sogou_ad_width=640;-->
-            <!--}-->
-        <!--</script>-->
-        <!--<script type='text/javascript' src='http://images.sohu.com/cs/jsfile/js/c.js'></script>-->
+
 
         <hr class="divider">
         <footer>

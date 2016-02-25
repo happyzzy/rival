@@ -88,10 +88,10 @@
             <td><a href="buildings_primus_conduit.html">魔法座</a></td>
             <td><a href="buildings_bunker.html">地堡</a></td>
             <td><a href="buildings_arrow_launcher.html">弩弓塔</a></td>
-            <td><a href="buildings_flare_tower.html">圣光塔</a></td>
+            <td style="background-color: #f0ad4e;"><a href="buildings_flare_tower.html">圣光塔</a></td>
         </tr>
         <tr>
-            <td style="background-color: #f0ad4e;"><a href="buildings_statues.html">雕像</a></td>
+            <td><a href="buildings_statues.html">雕像</a></td>
             <td><a href="buildings_walls.html">城墙</a></td>
         </tr>
         <tr>
@@ -109,17 +109,33 @@
             <table class="table">
                 <tr>
                     <td>名称</td>
-                    <td>雕像</td>
+                    <td>圣光塔</td>
                 </tr>
                 <tr>
                     <td>图标</td>
                     <td>
-                        <img src="../images/statues.png" style="max-width: 30px"/>
+                        <img src="../images/flare_tower.png" style="max-width: 30px"/>
                     </td>
                 </tr>
                 <tr>
-                    <td>描述</td>
-                    <td>无法被摧毁，不同的雕像具有不同效果</td>
+                    <td>尺寸</td>
+                    <td>3x3</td>
+                </tr>
+                <tr>
+                    <td>攻击速度</td>
+                    <td>每秒0.5次(2s)</td>
+                </tr>
+                <tr>
+                    <td>攻击范围</td>
+                    <td>8 tiles</td>
+                </tr>
+                <tr>
+                    <td>伤害类型</td>
+                    <td>物理,弹射伤害</td>
+                </tr>
+                <tr>
+                    <td>目标类型</td>
+                    <td>地面,空中</td>
                 </tr>
             </table>
 
@@ -128,31 +144,42 @@
                 <!--<caption>等级属性表</caption>-->
                 <thead>
                 <tr>
-                    <th>雕像</th>
-                    <th>重复雕像产生经验</th>
-                    <th>升级经验</th>
+                    <th>等级</th>
+                    <th>HP</th>
+                    <th>秒伤</th>
+                    <th>每次攻击</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>青铜</td>
-                    <td>100</td>
-                    <td>900</td>
+                    <td>1</td>
+                    <td>750</td>
+                    <td>42</td>
+                    <td>83 - 86</td>
                 </tr>
                 <tr>
-                    <td>白银</td>
-                    <td>300</td>
-                    <td>3,000</td>
+                    <td>2</td>
+                    <td>790</td>
+                    <td>46.46</td>
+                    <td>91 - 94</td>
                 </tr>
                 <tr>
-                    <td>黄金</td>
-                    <td>900</td>
-                    <td>18,000</td>
+                    <td>3</td>
+                    <td>825</td>
+                    <td>50.88</td>
+                    <td>100 - 104</td>
                 </tr>
                 <tr>
-                    <td>黑曜石</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
+                    <td>4</td>
+                    <td>1,170</td>
+                    <td>55.3</td>
+                    <td>109 - 112</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>1,800</td>
+                    <td>71.70</td>
+                    <td>140 - 146</td>
                 </tr>
                 </tbody>
             </table>
@@ -162,69 +189,153 @@
                 <!--<caption>升级花费表</caption>-->
                 <thead>
                 <tr>
-                    <th>雕像</th>
-                    <th>效果</th>
-                    <th>青铜</th>
-                    <th>白银</th>
-                    <th>黄金</th>
-                    <th>黑曜石</th>
+                    <th>等级</th>
+                    <th>升级费用(黄金)</th>
+                    <th>升级费用(银环)</th>
+                    <th>升级时间</th>
+                    <th>堡垒等级</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>弩手</td>
-                    <td>所有弓箭塔HP与伤害提升</td>
-                    <td>1%</td>
-                    <td>2%</td>
-                    <td>3%</td>
-                    <td>5%</td>
+                    <td>1</td>
+                    <td>3,000,000</td>
+                    <td>780</td>
+                    <td>4天18小时</td>
+                    <td>14</td>
                 </tr>
                 <tr>
-                    <td>战士</td>
-                    <td>物理防御物伤害提升</td>
-                    <td>1%</td>
-                    <td>2%</td>
-                    <td>3%</td>
-                    <td>5%</td>
+                    <td>2</td>
+                    <td>3,800,000</td>
+                    <td>960</td>
+                    <td>5天6小时</td>
+                    <td>14</td>
                 </tr>
                 <tr>
-                    <td>苏里克</td>
-                    <td>魔法塔伤害提升</td>
-                    <td>1%</td>
-                    <td>2%</td>
-                    <td>3%</td>
-                    <td>5%</td>
+                    <td>3</td>
+                    <td>4,300,000</td>
+                    <td>1,200</td>
+                    <td>7天</td>
+                    <td>15</td>
                 </tr>
                 <tr>
-                    <td>伯纳</td>
-                    <td>防御物HP提升</td>
-                    <td>1%</td>
-                    <td>2%</td>
-                    <td>3%</td>
-                    <td>5%</td>
+                    <td>4</td>
+                    <td>5,000,000</td>
+                    <td>1,600</td>
+                    <td>7天12小时</td>
+                    <td>15</td>
                 </tr>
                 <tr>
-                    <td>阿兰桌</td>
-                    <td>堡垒附近5格内建筑HP以及伤害提升</td>
-                    <td>2%</td>
-                    <td>4%</td>
-                    <td>6%</td>
-                    <td>10%</td>
-                </tr>
-                <tr>
-                    <td>麦勒斯</td>
-                    <td>死亡的敌军有10%几率重生为我方亡灵战士</td>
-                    <td>亡灵战士 Level 1</td>
-                    <td>亡灵战士 Level 2</td>
-                    <td>亡灵战士 Level 3</td>
-                    <td>亡灵战士 Level 4</td>
+                    <td>5</td>
+                    <td>8,900,000</td>
+                    <td>4,000</td>
+                    <td>8天</td>
+                    <td>16</td>
                 </tr>
                 </tbody>
             </table>
 
+            <table class="table table-bordered table-condensed table-striped">
+                <!--<caption>等级属性表</caption>-->
+                <thead>
+                <tr>
+                    <th>秘银升级次数</th>
+                    <th>秘银花费</th>
+                    <th>戒指花费</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>780</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>1400</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>2350</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>3600</td>
+                </tr>
+                </tbody>
+            </table>
 
-
-
+            <table class="table table-bordered table-condensed table-striped">
+                <!--<caption>等级属性表</caption>-->
+                <thead>
+                <tr>
+                    <th>魔力花费</th>
+                    <th>圣光塔魔法充能</th>
+                </tr>
+                </thead>
+                <tbody>
+                <td>5 mana</td>
+                <td>+20%</td>
+                </tr>
+                <tr>
+                    <td>10 mana</td>
+                    <td>+20%</td>
+                </tr>
+                <tr>
+                    <td>15 mana</td>
+                    <td>+20%</td>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed table-striped">
+                <!--<caption>等级属性表</caption>-->
+                <thead>
+                <tr>
+                    <th>魔法充能</th>
+                    <th>目标攻击</th>
+                    <th>魔法消耗</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Empty</td>
+                    <td>1</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>20%</td>
+                    <td>3</td>
+                    <td>-20%</td>
+                </tr>
+                <tr>
+                    <td>40%</td>
+                    <td>3</td>
+                    <td>-20%</td>
+                </tr>
+                <tr>
+                    <td>60%</td>
+                    <td>3</td>
+                    <td>-20%</td>
+                </tr>
+                <tr>
+                    <td>80%</td>
+                    <td>3</td>
+                    <td>-20%</td>
+                </tr>
+                <tr>
+                    <td>100%</td>
+                    <td>3</td>
+                    <td>-20%</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
