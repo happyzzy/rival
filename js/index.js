@@ -3,6 +3,7 @@
  */
 
 $(function () {
+  $('#cnzz').css('display','none');
   //        $(function () {
   //
   //            $('#menu-nav .navbar-collapse a').click(function (e) {
